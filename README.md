@@ -54,7 +54,7 @@ const sections = [{
 
 
 # Sample Output
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/nehaabrol87/ng-template-and-recusrion/blob/master/src/assets/sample-output.png)
 
 # Magical HTML
 ```
