@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Section } from './../models/section';
+import { default as Sections } from './../mocks/sections';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  private sections : Section [];
+
+  constructor() {
+    this.sections = Sections;
+  }
+
+  hasSubSections(section): boolean {
+    return section.sections.length > 0;
+  }
 }
